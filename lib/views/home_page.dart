@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:urubu_do_pix/style/colors.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -27,12 +29,29 @@ class HomePage extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
+              COLOR_URUBU_DARK,    // Cor escura do urubu para um tom mais sério
+              BACKGROUND_DARK,     // Cor de fundo mais escura para contraste suave
             ],
           )
         ),
+        padding: EdgeInsets.fromLTRB(20, 40, 20, 20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Text(
+              "Bem vindo", 
+              style: GoogleFonts.nunitoSans(
+                color: Color(0xFFEFEFEF),
+                fontSize: 30
+              )
+            ),
+            Text("Bem vindo", style: TextStyle(fontSize: 30),),
+            TextFormField(
+              
+            ),
+            TextFormField(
+              
+            ),
           ]
         )
       ),
